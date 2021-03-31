@@ -18,13 +18,13 @@ const Sidebar = () => {
           <BsFillPersonFill className="mx-1"/>
           Kobayashi Kai
       </a>
-      <a 
+      {/* <a 
         className="flex items-center justify-center px-2 py-2 my-2 bg-gray-100 rounded-full cursor-pointer"
         href=""
         download="name">
           <AiFillProject className="mx-1"/>
           Project
-      </a>
+      </a> */}
       <a 
         className="flex items-center justify-center px-2 py-2 my-2 bg-gray-100 rounded-full cursor-pointer"
         href=""
