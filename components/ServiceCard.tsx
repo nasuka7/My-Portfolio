@@ -1,17 +1,25 @@
 import { FunctionComponent } from "react";
 import { IService } from "../type";
 
-const ServiceCard:FunctionComponent<{service:IService}> = ({
+const ServiceCard:FunctionComponent<{ service:IService }> = ({
   service: { Icon, about, title },
 }) => {
-  return <div>
 
-    <Icon />
-    <div>
-      <h4>{title}</h4>
-      <p>{about}</p>
+  const createMarcup = () => {
+    return {
+      __html: about,
+    }
+  }
+
+  return (
+    <div className="flex item-center p-2 space-x-4">
+      <Icon  className="w-6 h-6" />
+        <div> 
+          <h4 className="font-boid">{title}</h4>
+          <p dangerouslySetInnerHTML={createMarcup()} />
+        </div>
     </div>
-  </div>
+  )
 }
 
 export default ServiceCard;
