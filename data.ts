@@ -1,27 +1,38 @@
 import { RiComputerLine } from 'react-icons/ri';
-import { IService, ISkill } from './type';
+import { IProject, IService, ISkill } from './type';
 import { BsCircleFill } from 'react-icons/bs'
+import { AiOutlineDownCircle } from 'react-icons/ai'
 
 export const services: IService[] = [
   {
-    title: "Fronted Dev",
-    about: "Lorem",
-    Icon:RiComputerLine,
+    title: "Age",
+    about: "21",
+    Icon: AiOutlineDownCircle,
   },
   {
-    title: "title",
-    about: "Lorem",
-    Icon:RiComputerLine,
+    title: "Hometown",
+    about: "Tokyo",
+    Icon: AiOutlineDownCircle,
   },
   {
-    title: "title",
-    about: "Lorem",
-    Icon:RiComputerLine,
+    title: "Motto",
+    about: "No Attack No Chance",
+    Icon: AiOutlineDownCircle,
   },
   {
-    title: "title",
-    about: "Lorem",
-    Icon:RiComputerLine,
+    title: "Club",
+    about: "Ultimate , Baseball",
+    Icon: AiOutlineDownCircle,
+  },
+  {
+    title: "Hobby",
+    about: "Work out",
+    Icon: AiOutlineDownCircle,
+  },
+  {
+    title: "ABC",
+    about: "DEF",
+    Icon: AiOutlineDownCircle,
   },
 ]
 
@@ -73,5 +84,17 @@ export const tools: ISkill[] = [
     name:"Rhinoceros",
     level:"70%",
     Icon:BsCircleFill
+  },
+]
+
+export const projects: IProject[] = [
+  {
+    name: "Twitter Clone",
+    description: "Twitterのクローンです。",
+    image_path: "",
+    deployed_url: "",
+    github_url: "",
+    categoly: ["react"],
+    key_techs: ["React"],
   },
 ]

@@ -8,6 +8,7 @@ const Sidebar = () => {
   const changeTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
   } 
+
   return (
     <div>
       <img 
@@ -56,8 +57,6 @@ const Sidebar = () => {
       onClick={ changeTheme }
       className="bg-gradient-to-r from-blue-600 to-blue-300 w-8/12 rounded-fullb shadow border-blue-500 text-white rounded-full px-2 py-2 hover:text-black">Toggle Theme</button>
     </div>
-
-    
   )
 }
 

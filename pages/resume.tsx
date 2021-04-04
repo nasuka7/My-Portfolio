@@ -9,18 +9,8 @@ const resume = () => {
           <h5 className="my-3 text-2xl font-bold">Education</h5>
         </div>
         <div>
-          <h5 className="my-2 text-xl font-bold">bousiritudaigakukenntikugakkazaisekityuu</h5>
-          <p className="my-3">aiuekoookokokokokokokokokokokokkokokokokokokok</p>
-        </div>
-      </div>
-
-      <div className="grid gap-6 md:grid-cols-2">
-        <div>
-          <h5 className="my-3 text-2xl font-bold">Education</h5>
-        </div>
-        <div>
-          <h5 className="my-2 text-xl font-bold">bousiritudaigakukenntikugakkazaisekityuu</h5>
-          <p className="my-3">aiuekoookokokokokokokokokokokokkokokokokokokok</p>
+          <h5 className="my-2 text-xl font-bold">某都内私立大学建築学科</h5>
+          <p className="my-3">2018年4月~　在学中</p>
         </div>
       </div>
 

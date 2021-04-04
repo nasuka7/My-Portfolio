@@ -1,9 +1,18 @@
-const project = () => {
+import { projects } from "../data";
+
+const Projects = () => {
   return (
     <div>
-      project
+      <nav>Navbar</nav>
+      <div>
+        {
+          projects.map(project => (
+            
+          ))
+        }
+      </div>
     </div>
   )
 }
 
-export default project;
+export default Projects;

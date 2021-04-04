@@ -5,10 +5,10 @@ class MyDocument extends Document {
     return (
       <Html lang="ja">
         <Head />
-        <body className="bg-tokyo-img bg-opacity-40 bg-cover bg-no-repeat dark:bg-gray-900 ">
+          <body className="bg-fixed bg-gradient-to-r from-green-500 to-blue-500 dark:from-dark-200 dark:to-dark-700 dark:text-white">
           <Main />
           <NextScript />
-        </body>
+          </body>
       </Html>
     )
   }
