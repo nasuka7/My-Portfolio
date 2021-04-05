@@ -97,4 +97,13 @@ export const projects: IProject[] = [
     categoly: ["react"],
     key_techs: ["React"],
   },
+  {
+    name: "Photo Search App",
+    description: "写真の検索サイトです",
+    image_path: "",
+    deployed_url: "",
+    github_url: "",
+    categoly: ["react"],
+    key_techs: ["React"],
+  },
 ]
