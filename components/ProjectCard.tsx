@@ -2,13 +2,14 @@ import { FunctionComponent, useState } from "react";
 import { AiFillGithub, AiFillProject, AiOutlineCloseSquare } from "react-icons/ai";
 import { IProject } from "../type";
 
+// import Image from 'next/image';
+
 const ProjectCard:FunctionComponent<{
   project: IProject
   }> = ({
     project:{
       name,
       image_path,
-      categoly,
       deployed_url,
       description,
       github_url,
@@ -20,6 +21,16 @@ const ProjectCard:FunctionComponent<{
 
     return (
       <div>
+        {/* <Image 
+          src={image_path} 
+          alt={name} 
+          className="cursor-pointer" 
+          onClick={() => setShowDetail(true)}
+          layout="responsive"
+          height="150"
+          width="300"
+          quality={10}
+        /> */}
         <img src={image_path} alt={name} className="cursor-pointer" onClick={() => setShowDetail(true)}/>
         <p className="my-2 text-center">{name}</p>
 

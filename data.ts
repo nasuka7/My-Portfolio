@@ -1,4 +1,3 @@
-import { RiComputerLine } from 'react-icons/ri';
 import { IProject, IService, ISkill } from './type';
 import { BsCircleFill } from 'react-icons/bs'
 import { AiOutlineDownCircle } from 'react-icons/ai'
@@ -91,19 +90,19 @@ export const projects: IProject[] = [
   {
     name: "Twitter Clone",
     description: "Twitterのクローンです。",
-    image_path: "",
+    image_path: "/images/tt.jpg",
     deployed_url: "",
     github_url: "",
-    categoly: ["react"],
+    category: ["react"],
     key_techs: ["React"],
   },
   {
     name: "Photo Search App",
     description: "写真の検索サイトです",
-    image_path: "",
+    image_path: "/images/tt.jpg",
     deployed_url: "",
     github_url: "",
-    categoly: ["react"],
-    key_techs: ["React"],
+    category: ["java"],
+    key_techs: ["Java"],
   },
 ]

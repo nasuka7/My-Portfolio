@@ -18,8 +18,8 @@ export interface IProject {
   image_path: string;
   deployed_url: string;
   github_url: string;
-  categoly: string[];
+  category: string[];
   key_techs: string[];
 }
 
-export type Category = "react" | "node" 
+export type Category = "react" | "node" | "java"

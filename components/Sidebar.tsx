@@ -2,6 +2,7 @@ import { AiFillGithub, AiFillProject, AiOutlineMail } from 'react-icons/ai';
 import { SiQiita } from 'react-icons/si';
 import { BsFillPersonFill } from 'react-icons/bs';
 import { useTheme } from 'next-themes'
+import Image from 'next/image';
 
 const Sidebar = () => {
   const { theme, setTheme } = useTheme()
@@ -10,12 +11,18 @@ const Sidebar = () => {
   } 
 
   return (
-    <div>
-      <img 
+    <>
+      <img src="https://pbs.twimg.com/profile_images/1336930218510991361/fpiM0QyN_400x400.jpg" 
+        alt="avatar"
+        className="w-32 h-32 mx-auto border rounded-full" />
+      {/* <Image 
+        height="128px"
+        width="128px"
         src="https://pbs.twimg.com/profile_images/1336930218510991361/fpiM0QyN_400x400.jpg" 
-        alt="user avatar"
-        className="w-32 h-32 mx-auto rounded-full"
-      />
+        alt="avatar"
+        className="mx-auto border rounded-full"
+      /> */}
+
       <p className="text-xl my-5">Kobayashi Kai</p>
       <a 
         className="flex items-center justify-center px-2 py-2 my-2 bg-gray-100 dark:bg-dark-200 rounded-full cursor-pointer"
@@ -56,8 +63,8 @@ const Sidebar = () => {
       <button 
       onClick={ changeTheme }
       className="bg-gradient-to-r from-blue-600 to-blue-300 w-8/12 rounded-fullb shadow border-blue-500 text-white rounded-full px-2 py-2 hover:text-black">Toggle Theme</button>
-    </div>
-  )
-}
+    </>
+  );
+};
 
 export default Sidebar;
