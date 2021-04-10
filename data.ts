@@ -1,8 +1,8 @@
-import { IProject, IService, ISkill } from './type';
-import { BsCircleFill } from 'react-icons/bs'
-import { AiOutlineDownCircle } from 'react-icons/ai'
+import { BsCircleFill } from 'react-icons/bs';
+import { AiOutlineDownCircle } from 'react-icons/ai';
+import { IProject, Service, Skill } from './types';
 
-export const services: IService[] = [
+export const services: Service[] = [
   {
     title: "Age",
     about: "21",
@@ -35,7 +35,7 @@ export const services: IService[] = [
   },
 ]
 
-export const languages: ISkill[] = [
+export const languages: Skill[] = [
   {
     name:"HTML",
     level:"60%",
@@ -68,7 +68,7 @@ export const languages: ISkill[] = [
   },
 ]
 
-export const tools: ISkill[] = [
+export const tools: Skill[] = [
   {
     name:"PhotoShop",
     level:"50%",
