@@ -6,8 +6,6 @@ const Bar:FunctionComponent<{ data: Skill }> = ({
   data: { Icon, level, name },
 }) => {
   const bar_width = `${level}`;
-  console.log(bar_width);
-  
 
   const variants = {
     initial: {
@@ -16,7 +14,10 @@ const Bar:FunctionComponent<{ data: Skill }> = ({
     animate: {
       width: bar_width,
       transition: {
-        duration: 0.4
+        duration: 0.4,
+        type: "string",
+        damping: 10,
+        stiffness: 100,
       },
     },
   };
