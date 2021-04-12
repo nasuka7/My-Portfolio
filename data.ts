@@ -29,8 +29,8 @@ export const services: Service[] = [
     Icon: AiOutlineDownCircle,
   },
   {
-    title: "ABC",
-    about: "DEF",
+    title: "Email",
+    about: "kobakai0707baseball@gmail.com",
     Icon: AiOutlineDownCircle,
   },
 ]

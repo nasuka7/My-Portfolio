@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Head } from "next/document";
 import { useState } from "react";
 import { fadeInUp, routeAnimation, stagger } from "../animations";
 import ProjectCard from "../components/ProjectCard";
@@ -28,13 +29,16 @@ const Projects = () => {
 
   return (
     <motion.div 
-      className="px-5 py-2 overflow-y-auto" 
+      className="px-5 py-2 overflow-y-scroll" 
       style={{ height: "65vh" }}
       variants={routeAnimation} 
       initial="initial" 
       animate="animate"
       exit="exit"
     >
+      <Head>
+        <title>Project | Kobayashi </title>
+      </Head>
       <ProjectsNavbar 
         handlerFilterCategory={handlerFilterCategory} 
         active={active}

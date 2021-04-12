@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { GetServerSideProps, GetServerSidePropsContext } from 'next';
+import { Head } from 'next/document';
 import { fadeInUp, routeAnimation, stagger } from '../animations';
 import ServiceCard from '../components/ServiceCard';
 import { services } from '../data'
@@ -15,6 +16,11 @@ const Index = ({endpoint}) => {
       animate="animate"
       exit="exit"
     >
+
+      <Head>
+        <title>Portfolio | Kobayashi </title>
+      </Head>
+
       <h5 className="my-3 font-medium">
         今年1月より本格的にフロントエンドの学習をはじめました。 
         <p>大学4年次を休学し、2023年度での就職を目指しております。
