@@ -5,7 +5,7 @@ class MyDocument extends Document {
     return (
       <Html lang="ja">
         <Head />
-          <body className="bg-fixed bg-gradient-to-r from-green-500 to-blue-500 dark:from-dark-200 dark:to-dark-700 dark:text-white">
+          <body className="bg-fixed bg-gradient-to-b from-blue-100 to-blue-500 dark:from-dark-200 dark:to-dark-700 dark:text-white">
           <Main />
           <NextScript />
           </body>
@@ -14,4 +14,4 @@ class MyDocument extends Document {
   }
 }
 
-export default MyDocument
+export default MyDocument;

@@ -1,9 +1,12 @@
 import { motion } from 'framer-motion';
+import { GetServerSideProps, GetServerSidePropsContext } from 'next';
 import { fadeInUp, routeAnimation, stagger } from '../animations';
 import ServiceCard from '../components/ServiceCard';
 import { services } from '../data'
 
-const Index = () => {
+const Index = ({endpoint}) => {
+  console.log(endpoint);
+  
   return (
     <motion.div 
       className="flex flex-col px-6 pt-1 flex-grow" 
@@ -46,5 +49,16 @@ const Index = () => {
     </motion.div>
   );
 };
+
+export const getServerSideProps: GetServerSideProps = async (
+  context: GetServerSidePropsContext
+) => {
+  // console.log(process.env.VERCEL_URL);
+  
+  // const res = await fetch(`${process.env.VERCEL_URL}/api/services`);
+  // const data = await res.json();
+  // console.log(data);
+  return  { props: { endpoint: process.env.VERCEL_URL }};
+}
 
 export default Index;
