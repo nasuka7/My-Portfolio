@@ -6,7 +6,7 @@ const NavItem: FunctionComponent<{
   activeItem: string,
   setActiveItem: Function,
   name: string,
-  route: string
+  route: string,
 }> = ({activeItem, name, route, setActiveItem}) => {
   return (
     activeItem !== name && (

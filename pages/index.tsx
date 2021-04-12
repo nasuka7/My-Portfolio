@@ -12,15 +12,19 @@ const Index = () => {
       animate="animate"
       exit="exit"
     >
-      <h5 className="my-3 font-medium">今年1月より本格的にフロントエンドの学習をはじめました。 
-      <p>大学4年次を休学し、2023年度での自社開発企業への就職を目指しております。
-      </p>
-      現在はReactの勉強に力を入れており、中長期のインターンシップに参加することが近い目標です。</h5>
+      <h5 className="my-3 font-medium">
+        今年1月より本格的にフロントエンドの学習をはじめました。 
+        <p>大学4年次を休学し、2023年度での就職を目指しております。
+        </p>
+        現在はReactの勉強に力を入れており、中長期のインターンシップに参加することが近い目標です。
+      </h5>
+
       <div 
         className="p-4 mt-5 flex-grow bg-gray-200 dark:bg-dark-100" 
-        style={{ marginLeft: "-1.5rem", marginRight: "-1.5rem" }}>
-        <h6 className="my-3 text-xl font-bold tracking-wide">Profile</h6>
+        style={{ marginLeft: "-1.5rem", marginRight: "-1.5rem" }}
+      >
 
+        <h6 className="my-3 text-xl font-bold tracking-wide">Profile</h6>
 
         <motion.div 
           className="grid gap-6 lg:grid-cols-2" 

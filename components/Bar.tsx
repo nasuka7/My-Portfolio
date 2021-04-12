@@ -2,7 +2,7 @@ import { FunctionComponent } from "react";
 import { Skill } from "../types";
 import { motion } from "framer-motion";
 
-const Bar:FunctionComponent<{ data: Skill }> = ({
+const Bar: FunctionComponent<{ data: Skill }> = ({
   data: { Icon, level, name },
 }) => {
   const bar_width = `${level}`;

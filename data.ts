@@ -88,6 +88,7 @@ export const tools: Skill[] = [
 
 export const projects: IProject[] = [
   {
+    id: 1,
     name: "Twitter Clone",
     description: "Twitterのクローンです。",
     image_path: "/images/tt.jpg",
@@ -97,6 +98,7 @@ export const projects: IProject[] = [
     key_techs: ["React"],
   },
   {
+    id: 2,
     name: "Photo Search App",
     description: "写真の検索サイトです",
     image_path: "/images/tt.jpg",

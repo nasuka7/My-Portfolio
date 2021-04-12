@@ -10,6 +10,8 @@ const Projects = () => {
   const [ projects, setProjects ] = useState(projectsData);
   const [ active, setActive ] = useState("all")
 
+  const [ showDetail, setShowDetail ] = useState<number | null>(null);
+
   const handlerFilterCategory = (category: Category | "all") => {
     if(category === "all") {
       setProjects(projectsData);
@@ -32,20 +34,28 @@ const Projects = () => {
       initial="initial" 
       animate="animate"
       exit="exit"
-      >
-      <ProjectsNavbar handlerFilterCategory={handlerFilterCategory} active={active}/>
+    >
+      <ProjectsNavbar 
+        handlerFilterCategory={handlerFilterCategory} 
+        active={active}
+      />
 
       <motion.div className="grid grid-cols-12 gap-4 my-3 relative"     
-          variants={stagger}
-          initial="initial"
-          animate="animate">
+        variants={stagger}
+        initial="initial"
+        animate="animate"
+      >
         {projects.map((project) => (
-            <motion.div className="col-span-12 p-2 sm:col-span-6 lg:col-span-4 bg-gray-200 dark:bg-dark-200 rounded-lg"
-              variants={fadeInUp}
-              key={project.name}
-              >
-              <ProjectCard project={project} />
-            </motion.div>
+          <motion.div className="col-span-12 p-2 sm:col-span-6 lg:col-span-4 bg-gray-200 dark:bg-dark-200 rounded-lg"
+            variants={fadeInUp}
+            key={project.name}
+          >
+            <ProjectCard 
+              project={project} 
+              showDetail={showDetail} 
+              setShowDetail={setShowDetail}
+            />
+          </motion.div>
         ))}
       </motion.div>
     </motion.div>
