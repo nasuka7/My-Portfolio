@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { Head } from "next/document";
 import { useState } from "react";
 import { fadeInUp, routeAnimation, stagger } from "../animations";
 import ProjectCard from "../components/ProjectCard";
@@ -36,9 +35,6 @@ const Projects = () => {
       animate="animate"
       exit="exit"
     >
-      <Head>
-        <title>Project | Kobayashi </title>
-      </Head>
       <ProjectsNavbar 
         handlerFilterCategory={handlerFilterCategory} 
         active={active}
