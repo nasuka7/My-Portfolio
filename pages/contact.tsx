@@ -1,8 +1,8 @@
-import { useFormState } from "../state/contact/useFormState";
-import { useSendContactForm } from "../state/contact/useSendContactForm";
+import { useFormState } from "../contact/useFormState";
+import { useSendContactForm } from "../contact/useSendContactForm";
 import { ContactParams } from "../types";
 
-const Contact: React.FC = () => {
+const Contact = () => {
   const [contact, handleChange] = useFormState<ContactParams>({
     name: '',
     email: '',
@@ -34,7 +34,7 @@ const Contact: React.FC = () => {
         <div>
           <label>お問い合わせ内容</label>
           <div>
-            <textarea placeholder='Your Message' name='message' onChange={handleChange} required />
+            <textarea placeholder='Your Message' name='メッセージ' onChange={handleChange} required />
           </div>
         </div>
         <button type='submit'>お問い合わせをする</button>

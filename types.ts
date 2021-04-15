@@ -1,5 +1,5 @@
-import { ExecOptionsWithStringEncoding } from 'node:child_process';
-import { IconType } from 'react-icons';
+import { ExecOptionsWithStringEncoding } from "node:child_process";
+import { IconType } from "react-icons";
 
 export interface Service {
   title: string;
@@ -10,7 +10,7 @@ export interface Service {
 export interface Skill {
   name: string;
   level: string;
-  Icon: IconType; 
+  Icon: IconType;
 }
 
 export interface IProject {
@@ -24,7 +24,7 @@ export interface IProject {
   key_techs: string[];
 }
 
-export type Category = "react" | "node" | "java"
+export type Category = "react" | "node" | "java";
 
 export interface ContactParams {
   name: string;

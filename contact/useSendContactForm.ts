@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import { useCallback, useState } from "react";
-import { ContactParams } from "../../types";
+import { ContactParams } from "../types";
 
 const SUBJECT_TITLE = 'お問い合わせ';
 const STATIC_FORMS_URL = 'https://api.staticforms.xyz/submit';
@@ -13,7 +13,7 @@ export const useSendContactForm = (): [string, (postData: ContactParams) => void
     const postParams = {
       ...postData,
       subject: SUBJECT_TITLE,
-      replyTo: 'kobakai0707baseball@gmail.com', 
+      replyTo: 'n4suka7@gmail.com', 
       accessKey: ACCESS_KEY,
     };
     const response = await fetch(STATIC_FORMS_URL, {
@@ -24,7 +24,7 @@ export const useSendContactForm = (): [string, (postData: ContactParams) => void
       .then((response) => response.json())
       .then((jsonData) => jsonData as { success: boolean; message: string })
       .catch((e) => {
-        console.error('An error occurred', e);
+        console.error('もう一度入力して下さい', e);
         const error = e as Error;
         return { success: false, message: error.message };
       });
