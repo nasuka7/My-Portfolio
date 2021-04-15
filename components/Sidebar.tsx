@@ -24,7 +24,7 @@ const Sidebar = () => {
         className="mx-auto border rounded-full"
       /> */}
 
-      <p className="text-xl my-5">Kobayashi Kai</p>
+      <p className="text-xl my-5 font-bold">Kobayashi Kai</p>
       <a 
         className="flex items-center justify-center px-2 py-2 my-2 bg-gray-100 dark:bg-dark-200 rounded-full cursor-pointer"
         href="/"
@@ -39,20 +39,20 @@ const Sidebar = () => {
           <AiFillGithub className="mx-1"/>
           Git hub
       </a>
-      <a 
+      {/* <a 
         className="flex items-center justify-center px-2 py-2 my-2 bg-gray-100 dark:bg-dark-200 rounded-full cursor-pointer"
         href="https://qiita.com/n4suka7"
       >
           <SiQiita className="mx-1"/>
           Qiita
-      </a>
-      <a 
+      </a> */}
+      {/* <a 
         className="flex items-center justify-center px-2 py-2 my-2 bg-gray-100 dark:bg-dark-200 rounded-full cursor-pointer"
         href=""
       >
           <AiOutlineMail className="mx-1"/>
           Contact
-      </a>
+      </a> */}
 
       <div className="flex items-center justify-center">
         <button 
@@ -60,7 +60,7 @@ const Sidebar = () => {
           className="flex items-center justify-around px-2 py-2 my-2 bg-gradient-to-r from-blue-600 to-blue-300 rounded-full border-blue-500 text-white hover:text-black"
         >
             <IoIosCloudyNight className="mx-1"/>
-            Toggle Theme
+            Toggle theme
         </button>
       </div>
     </>

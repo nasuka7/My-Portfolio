@@ -29,7 +29,7 @@ const ProjectsNavbar: FunctionComponent<{
   active: string,
 }> = (props) => {
   return (
-    <div className="flex ml-3 list-none overflow-x-auto px-3 py-3">
+    <div className="flex space-x-3 list-none overflow-x-auto px-3 py-3">
       <NavItem value="all" {...props} />
       <NavItem value="react" {...props} />
       <NavItem value="java" {...props} />

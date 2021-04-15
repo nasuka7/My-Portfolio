@@ -4,9 +4,7 @@ import { fadeInUp, routeAnimation, stagger } from '../animations';
 import ServiceCard from '../components/ServiceCard';
 import { services } from '../data'
 
-const Index = ({endpoint}) => {
-  console.log(endpoint);
-  
+const Index = () => { 
   return (
     <motion.div 
       className="flex flex-col px-6 pt-1 flex-grow" 

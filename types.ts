@@ -1,3 +1,4 @@
+import { ExecOptionsWithStringEncoding } from 'node:child_process';
 import { IconType } from 'react-icons';
 
 export interface Service {
@@ -24,3 +25,9 @@ export interface IProject {
 }
 
 export type Category = "react" | "node" | "java"
+
+export interface ContactParams {
+  name: string;
+  email: string;
+  message: string;
+}

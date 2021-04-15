@@ -3,8 +3,6 @@ import Sidebar from '../components/Sidebar'
 import '../styles/globals.css'
 import { ThemeProvider } from 'next-themes'
 import { AnimatePresence } from 'framer-motion'
-import { route } from 'next/dist/next-server/server/router';
-import { Router } from 'next/router';
 
 
 function MyApp({ Component, pageProps, router }) {

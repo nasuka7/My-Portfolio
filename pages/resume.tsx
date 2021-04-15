@@ -4,9 +4,6 @@ import { languages, tools } from "../data";
 import { fadeInUp, routeAnimation } from "../animations"
 
 const resume = () => {
-
-  
-
   return (
     <motion.div 
       className="px-6 py-2"
