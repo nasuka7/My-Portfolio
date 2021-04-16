@@ -36,7 +36,7 @@ const Navbar = () => {
       <span className="font-bold text-xl border-b-4 border-blue-900 text-blue-700 md:text-2xl">
         {activeItem}
       </span>
-      <div className="flex space-x-3 text-blue-400 font-lg ">
+      <div className="flex space-x-3 text-blue-400 font-lg">
         <NavItem 
           activeItem={activeItem} 
           setActiveItem={setActiveItem} 

@@ -4,9 +4,9 @@ import { ContactParams } from "../types";
 
 const Contact = () => {
   const [contact, handleChange] = useFormState<ContactParams>({
-    name: '',
-    email: '',
-    message: '',
+    name: "",
+    email: "",
+    message: "",
   });
   const [errorMessage, sendContactForm] = useSendContactForm();
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
@@ -15,29 +15,73 @@ const Contact = () => {
   };
 
   return (
-    <div>
-      <h2>お問い合わせ</h2>
+    <div className="w-full max-w-max relative ml-32 mt-12 mb-10">
       {errorMessage && <p>{errorMessage}</p>}
-      <form method='post' onSubmit={handleSubmit}>
-        <div className='field'>
-          <label>お名前</label>
+      <form
+        method="post"
+        onSubmit={handleSubmit}
+        className="bg-gray-100 dark:bg-dark-200 rounded px-6 pt-6 pb-6 mb-4"
+      >
+        <div className="mb-4">
+          <label
+            className="block text-gray-600 dark:text-white text-sm font-semibold mb-2"
+            htmlFor="title"
+          >
+            Title
+          </label>
           <div>
-            <input type='text' placeholder='お名前' name='name' onChange={handleChange} required />
+            <input
+              type="text"
+              placeholder="Title"
+              name="name"
+              onChange={handleChange}
+              required
+              className="bg-gray-200 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            />
           </div>
         </div>
         <div>
-          <label>メールアドレス</label>
+          <label
+            className="block text-gray-600 dark:text-white text-sm font-semibold mb-2"
+            htmlFor="email"
+          >
+            Mail{" "}
+          </label>
           <div>
-            <input type='email' placeholder='メールアドレス' name='email' onChange={handleChange} required />
+            <input
+              type="email"
+              placeholder="Your mail adress"
+              name="email"
+              onChange={handleChange}
+              required
+              className="bg-gray-200 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            />
           </div>
         </div>
         <div>
-          <label>お問い合わせ内容</label>
+          <label
+            className="block text-gray-600 dark:text-white text-sm font-semibold mb-2"
+            htmlFor="title"
+          >
+            Description
+          </label>
           <div>
-            <textarea placeholder='Your Message' name='メッセージ' onChange={handleChange} required />
+            <textarea
+              name="Description"
+              onChange={handleChange}
+              required
+              className="bg-gray-200 p-1 appearance-none border rounded w-full text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              rows={5}
+              cols={75}
+            />
           </div>
         </div>
-        <button type='submit'>お問い合わせをする</button>
+        <button
+          type="submit"
+          className="bg-blue-600 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+        >
+          Create post
+        </button>
       </form>
     </div>
   );
