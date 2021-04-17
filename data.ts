@@ -24,11 +24,6 @@ export const services: Service[] = [
     Icon: AiOutlineDownCircle,
   },
   {
-    title: "Hobby",
-    about: "Work out",
-    Icon: AiOutlineDownCircle,
-  },
-  {
     title: "Email",
     about: "kobakai0707baseball@gmail.com",
     Icon: AiOutlineDownCircle,

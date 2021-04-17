@@ -31,7 +31,7 @@ const ProjectCard: FunctionComponent<{
       >
         <motion.div 
           variants={fadeInUp} 
-          className="border-4 border-gray-500"
+          className="border-4 border-gray-800"
         >
           <Image 
             src={image_path} 
@@ -62,7 +62,7 @@ const ProjectCard: FunctionComponent<{
                 alt={name} 
               /> */}
               <motion.div 
-                className="flex justify-center my-4 ml-3" 
+                className="flex justify-center my-4 -ml-5" 
                 variants={fadeInUp}
               >
                 <a 

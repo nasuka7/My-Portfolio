@@ -5,7 +5,7 @@ class MyDocument extends Document {
     return (
       <Html lang="ja">
         <Head/>
-        <body className="bg-fixed dark:from-dark-200 dark:to-dark-700 dark:text-white">
+        <body className="bg-gradient-to-b from-blue-100 via-blue-200 to-blue-800 bg-fixed dark:from-dark-200 dark:to-dark-700 dark:text-white">
           <Main />
           <NextScript />
         </body>
@@ -16,4 +16,4 @@ class MyDocument extends Document {
 
 export default MyDocument;
 
-// bg-sea-img min-h-screen bg-no-repeat bg-cover
+

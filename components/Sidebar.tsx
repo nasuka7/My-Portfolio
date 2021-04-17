@@ -1,4 +1,4 @@
-import { AiFillGithub, AiOutlineMail } from 'react-icons/ai';
+import { AiFillGithub } from 'react-icons/ai';
 import { IoIosCloudyNight } from 'react-icons/io'
 import { SiQiita } from 'react-icons/si';
 import { BsFillPersonFill } from 'react-icons/bs';

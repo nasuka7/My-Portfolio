@@ -7,9 +7,6 @@ module.exports = {
       "custom-black":"5px 5px 10px #0a0c0e , -5px -5px 10px #14161c"
     },
     extend: {
-      backgroundImage: theme => ({
-        'sea-img': "url('../public/images/bg-image.jpg')",
-      }),
       colors: {
         dark: {
           DEFAULT: "#010101",
@@ -26,3 +23,7 @@ module.exports = {
   },
   plugins: [],
 }
+
+// backgroundImage: theme => ({
+//   'black-archi-img': "url('../public/images/black-archi-img.png')",
+// }),
