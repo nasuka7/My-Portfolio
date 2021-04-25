@@ -102,24 +102,5 @@ export const projects: IProject[] = [
     category: ["java"],
     key_techs: ["Java"],
   },
-  {
-    id: 2,
-    name: "Photo Search App",
-    description: "写真の検索サイトです",
-    image_path: "/images/tt.jpg",
-    deployed_url: "",
-    github_url: "",
-    category: ["java"],
-    key_techs: ["Java"],
-  },
-  {
-    id: 2,
-    name: "Photo Search App",
-    description: "写真の検索サイトです",
-    image_path: "/images/tt.jpg",
-    deployed_url: "",
-    github_url: "",
-    category: ["java"],
-    key_techs: ["Java"],
-  },
+  
 ]
